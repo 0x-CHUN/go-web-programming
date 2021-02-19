@@ -1,0 +1,34 @@
+POST http://localhost:8080/post/
+Content-Type: application/json
+
+{
+  "content": "My first post",
+  "author": "xxx"
+}
+
+###
+POST http://localhost:8080/post/
+Content-Type: application/json
+
+{
+  "content": "My Second post",
+  "author": "xxx"
+}
+
+###
+GET http://localhost:8080/post/1
+
+###
+GET http://localhost:8080/post/2
+
+###
+PUT http://localhost:8080/post/1
+Content-Type: application/json
+
+{
+  "content": "My first post!!!",
+  "author": "chun"
+}
+
+###
+DELETE http://localhost:8080/post/1
